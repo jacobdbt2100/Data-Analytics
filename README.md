@@ -48,6 +48,51 @@ Summarily, **data profiling** tells what the data looks like; **data validation*
 - **Merge:** combines data by adding columns. It links datasets using a common field to bring related information from one dataset into another.
 - Normalization vs Standardization (model building)
 
+
+
+**Data Cleaning Steps:**
+`Data cleaning` is the process of identifying and correcting errors in a dataset to improve its reliability for analysis.
+
+`Data quality checks:`
+
+**1. Data Types**
+- Text, Dates, Decimals/Floats, Integer, Boolean)
+
+**2. Irrelevant Data**
+- Unused fields or entries
+- Constant/no-change values
+
+**3. Missing Values**
+- NULLs / NaNs / Blanks
+
+**4. Duplicates**
+- Repeated entries (none unique rows)
+
+**5. Special / Non-printable Characters**
+- Unwanted characters/symbols (punctuation, emojis, currency)
+- Extra spaces (tabs, newline artefacts)
+
+**6. Data Formats**
+- Inconsistent date formats (DD/MM vs MM/DD)
+- Mixed units (kg vs g, ₦ vs $)
+- Spacing inconsistencies ("Transfer", "Transfer ")
+- Case inconsistencies (“Male”, “male”, "MALE", “M”)
+
+**7. Invalid Data**
+- Out-of-range values (negative age, future dates, time <= 0)
+- Logical conflicts (discharge < admission)
+- Failed reference integrity checks (invalid IDs/keys)
+
+**8. Outliers**
+Outliers are values that differ significantly from the mean of
+characteristic features of a dataset.
+
+> Outlier Detection Methods:
+- **Box Plot (IQR) Method**: A value is an outlier if it exceeds or falls below **1.5×IQR (interquartile range)**. That is, if it lies above the top quartile (Q3) or below the bottom quartile (Q1).
+- **Standard Deviation Method**: A value is an outlier if it is greater or lower than the **mean±(3×standard deviation)**.
+
+> A **box plot** is a graphical representation of the distribution of a dataset showing the median, quartiles, and possible outliers.
+
 ### 1.3 Exploratory Data Analysis (EDA)
 - Descriptive statistics (mean, median, mode, std, percentiles)
 - Distributions & variability
@@ -1045,6 +1090,30 @@ df.plot(kind='area')
 | **Example (range)**   | `df.loc[1:3]` → includes both 1 and 3       | `df.iloc[1:3]` → includes 1 but **excludes 3** |
 | **Boolean filtering** | Accepts boolean masks with **labels**       | Accepts boolean masks with **positions**       |
 | **Use case**          | When you know the **index names** or labels | When you know the **row/column order**         |
+
+## 6. Basic-Statistics-for-Data-Analysis
+
+
+
+
+
+
+
+
+
+## 7. Machine-Learning-Basics
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
