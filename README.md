@@ -1,20 +1,28 @@
 # Data Analytics
 
-## 1. Foundations of Data Analysis
+## 1. Introduction
 
 **Data analysis** is a process of `modelling`, `analyzing`, and `interpreting` data to extract insights. A **Data Analyst** `collects`, `process`, and `analyze` data to identify trends/patterns and make informed decisions.
+
+**Data mining:** The analytical process of applying statistical and machine-learning techniques to prepared data to uncover patterns, relationships, and predictive insights for decision-making.
+
+**Data profiling:** The process of examining data structure, content, and quality to assess fitness for use and prevent issues in downstream analytics.
+
+**Data validation:** The process of enforcing predefined rules and constraints to ensure data meets required standards as it flows through a pipeline.
+
+Summarily, **data profiling** tells what the data looks like; **data validation** ensures the data meets what it should look like.
 
 **Data lifecycle**: `Use case` > `Data collection` > `Storage` > `Processing` > `Analysis` > `Visualization` > `Reporting`
 
 **Types of analytics**:
 
-- **Descriptive:** What happened? e.g., A skincare brand sees 15,000 people clicked their Instagram ad last week, but only 500 purchased.
-- **Diagnostic:** Why did it happen? e.g., Analysis shows that shipping costs made many customers abandon their carts at checkout.
-- **Predictive:** What will likely happen?e.g., If nothing changes, the model forecasts cart drop-offs will keep increasing as shipping prices rise.
-- **Prescriptive:** What should we do? e.g., The system recommends offering free shipping above $40 to increase checkout conversions.
-- **Exploratory:** What hidden opportunities exist? e.g., Data reveals customers who buy face cleansers often buy serums within a week, suggesting a personalised follow-up email can boost revenue.
+- **Descriptive:** `What happened?` e.g., A skincare brand sees 15,000 people clicked their Instagram ad last week, but only 500 purchased.
+- **Diagnostic:** `Why did it happen?` e.g., Analysis shows that shipping costs made many customers abandon their carts at checkout.
+- **Predictive:** `What will likely happen?` e.g., If nothing changes, the model forecasts cart drop-offs will keep increasing as shipping prices rise.
+- **Prescriptive:** `What should we do?` e.g., The system recommends offering free shipping above $40 to increase checkout conversions.
+- **Exploratory:** `What hidden opportunities exist?` e.g., Data reveals customers who buy face cleansers often buy serums within a week, suggesting a personalised follow-up email can boost revenue.
 
-## 2. Data Sources
+### 1.1 Data Sources
 - Databases, spreadsheets, APIs, streaming data, SaaS applications (Salesforce, HubSpot, Shopify, etc.)
 - Structured, Semi-structured, Unstructured data
 - Data file formats: csv, xlsx, json, parquet
@@ -23,7 +31,7 @@
   - **Foreign keys**: a field in a table that refers to the primary key of another table, establishing a relationship between the two tables.
   - 1–1, 1–Many, Many–Many
 
-## 3. Data Preparation (Cleaning & Transformation)
+### 1.2 Data Preparation (Cleaning & Transformation)
 - Duplicates
 - Missing Values
 - Data Types
@@ -34,7 +42,7 @@
 - Outliers (statistical analysis)
 - Normalization vs Standardization (model building)
 
-## 4. Exploratory Data Analysis (EDA)
+### 1.3 Exploratory Data Analysis (EDA)
 - Descriptive statistics (mean, median, mode, std, percentiles)
 - Distributions & variability
 - Correlations
@@ -48,7 +56,7 @@ An unsupervised machine learning technique, `K-Means Clustering`, groups custome
 - Market basket analysis
 - Cohort analysis
 
-## 5. Business Understanding & Metrics
+### 1.4 Business Understanding & Metrics
 - KPIs
 - Essential business metrics (marketing):
   - Engagement rate: measure/compare success of creating awareness about a product or service
@@ -56,7 +64,7 @@ An unsupervised machine learning technique, `K-Means Clustering`, groups custome
   - Return on Ad Spend (ROAS)
   - Retention rate
  
-## 6. Data Modelling Concepts
+### 1.5 Data Modelling Concepts
 - `Schema:`a structured plan of how data is organized in a database. It defines:
   - `Tables (entities):` `Fact` vs `Dimension` tables
   - `Columns (attributes)`
@@ -83,53 +91,18 @@ An unsupervised machine learning technique, `K-Means Clustering`, groups custome
   - `Accuracy:` reduces duplication and errors
   - `Reusability:` reuse of data structures, definitions, and logic across multiple reports and systems
 
-## 7. Data Visualisation & Insight Communication
+### 1.6 Data Visualisation & Insight Communication
 - Chart selection best practices
 - Storytelling with data
 - Dashboards & Reports
 
-## 8. Documentation
+### 1.7 Documentation
 - Meta data
 - Code, Queries (with comments)
 - Version control basics (git)
 - Communicating assumptions, limitations, and data decisions
 
-### MISCELLANEOUS
-
-#### `Data Analysis vs Data Analytics:`
-
-| Aspect                | **Data Analysis**                                                                                      | **Data Analytics**                                                                       |
-| --------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| **Definition**        | The process of modelling, analyzing, and interpreting data to extract insights. | A broader discipline that includes data collection, data engineering, data science, data analysis, and insight delivery to support decision-making. |
-| **Scope**             | Narrower — focused on answering specific questions.                         | Broader — covers full data lifecycle: Data collection > Storage > Processing > Analysis > Visualization > Communication.                                   |
-
-Summarily, **`Data Analysis`** is a `task` — extracting insights from data. **`Data Analytics`** is a field — encompassing the processes that make insights possible.
-
-#### `Data Mining vs Data Profiling:`
-
-| Aspect            | **Data Mining**                                                     | **Data Profiling**                                              |
-| ----------------- | ------------------------------------------------------------------- | --------------------------------------------------------------- |
-| **Purpose**       | Extract hidden patterns, correlations, and insights from data       | Understand data quality, structure, and anomalies               |
-| **Focus**         | Analytics, prediction, and decision support                         | Assessing data fitness for use before analytics                 |
-| **Techniques**    | Machine learning, statistical modelling, clustering, classification | Completeness checks, data type validation, frequency analysis   |
-| **Output**        | Trends, predictive models, actionable insights                      | Data quality metrics, metadata summaries                        |
-| **Project Stage** | Typically after data preparation                                    | Early phase of data pipeline (before cleansing/transformation)  |
-| **Key Benefit**   | Drives strategic and operational decisions                          | Reduces errors and improves reliability of downstream analytics |
-
-#### `Data Normalization:`
-The process of structuring data to reduce redundancy and improve integrity—typically by organizing it into related tables and enforcing rules (normal forms) so that each data point is stored once and updated consistently.
-
-#### `Data Warehouse:`
-A large centralized repository of data used for reporting and analysis, combining and organizing data from different sources for efficient querying and reporting.
-
-#### `Handling Large Datasets:`
-Requires the use of efficient data storage and processing techniques such as;
-- SQL databases
-- Parallel computing: running multiple computations at the same time across multiple processors, rather than sequentially on a single one.
-- Cloud-based solutions
-- Code optimization (performance tuning)
-
-#### `Data Privacy and Security Concerns:`
+### 1.8 Data Privacy and Security Concerns
 - Data protection regulations
 - Anonymizing sensitive data
 - Secure data storage and transfer methods
