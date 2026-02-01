@@ -1,27 +1,18 @@
-# Data Analytics Overview 📊
+# Data Analytics
 
 ## 1. Foundations of Data Analysis
-- **Definition**: Data analysis is a process of modelling, analyzing, and interpreting data to
-extract insights.
-- **Data roles**: Data Analyst, BI Analyst, Analytics Engineer, Data Engineer, Data Scientist, Machine Learning Engineer, etc. A `Data Analyst` collects, processes, and analyzes data to identify trends, patterns and make informed decisions.
 
-- **Data lifecycle**: Use case > Data collection > Storage > Processing > Analysis > Visualization > Communication
-- **Types of analytics**:
+**Data analysis** is a process of `modelling`, `analyzing`, and `interpreting` data to extract insights. A **Data Analyst** `collects`, `process`, and `analyze` data to identify trends/patterns and make informed decisions.
 
-  - `Descriptive Analysis:` What happened?
-      > `Example:` A skincare brand sees 15,000 people clicked their Instagram ad last week, but only 500 purchased.
-  
-  - `Diagnostic Analysis:` Why did it happen?
-      > `Example:` Analysis shows that shipping costs made many customers abandon their carts at checkout.
+**Data lifecycle**: `Use case` > `Data collection` > `Storage` > `Processing` > `Analysis` > `Visualization` > `Reporting`
 
-  - `Predictive Analysis:` What will likely happen?
-      > `Example:` If nothing changes, the model forecasts cart drop-offs will keep increasing as shipping prices rise.
+**Types of analytics**:
 
-  - `Prescriptive Analysis:` What should we do?
-      > `Example:` The system recommends offering free shipping above $40 to increase checkout conversions.
-
-  - `Exploratory Analysis:` What hidden opportunities exist?
-      > `Example:` Data reveals customers who buy face cleansers often buy serums within a week, suggesting a personalised follow-up email can boost revenue.
+- **Descriptive:** What happened? e.g., A skincare brand sees 15,000 people clicked their Instagram ad last week, but only 500 purchased.
+- **Diagnostic:** Why did it happen? e.g., Analysis shows that shipping costs made many customers abandon their carts at checkout.
+- **Predictive:** What will likely happen?e.g., If nothing changes, the model forecasts cart drop-offs will keep increasing as shipping prices rise.
+- **Prescriptive:** What should we do? e.g., The system recommends offering free shipping above $40 to increase checkout conversions.
+- **Exploratory:** What hidden opportunities exist? e.g., Data reveals customers who buy face cleansers often buy serums within a week, suggesting a personalised follow-up email can boost revenue.
 
 ## 2. Data Sources
 - Databases, spreadsheets, APIs, streaming data, SaaS applications (Salesforce, HubSpot, Shopify, etc.)
@@ -137,13 +128,6 @@ Requires the use of efficient data storage and processing techniques such as;
 - Parallel computing: running multiple computations at the same time across multiple processors, rather than sequentially on a single one.
 - Cloud-based solutions
 - Code optimization (performance tuning)
-
-#### `Latest Trends and Developemts Updates:`
-- Blogs
-- Podcasts
-- Online courses
-- Conferences
-- Industry publications
 
 #### `Data Privacy and Security Concerns:`
 - Data protection regulations
