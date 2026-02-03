@@ -182,92 +182,28 @@ SQL commands are statements used to define database structures, retrieve data, m
 
 ## 4. Power BI
 
-
-
-
-
-
-
-
-
-
 ### 4.1 Power BI Basics
 
 **Data visualization:** the practice of presenting data in graphical or pictorial formats—such as charts, graphs, maps, and dashboards—to clearly communicate patterns, trends, and insights.
 
 **Power BI:** is a business intelligence tool developed by Microsoft that allows users to connect, transform, analyze, and visualize data from multiple sources.
 
-- `Power BI` main Components:
-  - `Desktop:` Windows application for building reports and data models.
-  - `Service (Power BI Online):` cloud-based platform for publishing, sharing, and collaborating on reports and dashboards.
-  - `Mobile:` mobile apps for viewing and interacting with reports on phones and tablets.
-  - `Gateway:` a bridge that connects on-premises data sources to Power BI Service for scheduled refreshes.
-  - `Report Server:` on-premises server for hosting and managing Power BI reports within an organization’s own infrastructure.
-  - `Embedded:` a service for developers to embed Power BI reports and dashboards into custom applications.
-  - `Power Query:` data connection and transformation engine used across Power BI for data cleaning and preparation.
-  - `Power Pivot:` data modelling engine that allows creating relationships, measures, and calculated columns using DAX.
+**Power BI main Components:**
+- `Desktop:` Windows application for building reports and data models.
+- `Service (Power BI Online):` cloud-based platform for publishing, sharing, and collaborating on reports and dashboards.
+- `Mobile:` mobile apps for viewing and interacting with reports on phones and tablets.
+- `Gateway:` a bridge that connects on-premises data sources to Power BI Service for scheduled refreshes.
+- `Report Server:` on-premises server for hosting and managing Power BI reports within an organization’s own infrastructure.
+- `Embedded:` a service for developers to embed Power BI reports and dashboards into custom applications.
+- `Power Query:` data connection and transformation engine used across Power BI for data cleaning and preparation.
+- `Power Pivot:` data modelling engine that allows creating relationships, measures, and calculated columns using DAX.
 
-- Power BI Desktop, with three main views (or panes), each serving a different purpose:
-  - `Report View:` build and design dashboards using visuals, charts, and slicers.
-  - `Data View:` see and explore loaded tables after data has been imported.
-  - `Model View:` define relationships between tables.
-
-- Data import from Excel, CSV, and SQL databases
-- Understanding Power Query Editor
-- Data profiling (column quality, distribution, profile)
-- Cleaning and transforming data:
-  - Remove duplicates, split columns, replace values, fill blanks
-  - Merge and append queries
-- Basic data model setup (naming conventions, data types, relationships)
-
-### 4.2 Data Modelling & DAX Fundamentals
-
-- Star schema design: fact and dimension tables
-- Relationships (one-to-many, cross filter direction)
-- Calculated columns vs. measures
-- DAX basics:
-  - SUM, AVERAGE, COUNTROWS, DISTINCTCOUNT, CALCULATE, FILTER, ALL
-- Conditional logic: IF, SWITCH
-- Time intelligence:
-  - TOTALYTD, SAMEPERIODLASTYEAR, DATEADD
-
-### 4.3 Data Visualisation & Interactivity
-
-- Chart types and when to use them:
-  - Bar/Column, Line, Card, Pie, Map, Matrix
-- Hierarchies (e.g., Year > Quarter > Month)
-- Slicers, Filters, and Drill-throughs
-- Conditional formatting and custom tooltips
-- Using bookmarks for dynamic storytelling
-
-### 4.4 Dashboard Design, Publishing & Storytelling
-
-- Dashboard layout and design principles:
-  - Consistent alignment, colours, and typography
-- Clear KPIs at the top, supporting visuals below
-- Storytelling techniques for business insights
-- Using Power BI Service:
-- Publishing reports
-- Creating and managing workspaces
-- Sharing dashboards and setting permissions
-- Report refresh and basic automation
-- Export options (PDF, PowerPoint, shared link)
-- Final **interactive dashboard** project
+Power BI Desktop has three main views (or panes), each serving a different purpose:
+- `Report View:` build and design dashboards.
+- `Data View:` see and explore loaded tables.
+- `Model View:` define relationships between tables.
 
 ## 5. Python for Data Analysis
-
-# PYTHON SUMMARY
-
-A visual summary of Python features that show up most in everyday code
-When people start learning Python, they often feel stuck.
-
-Too many videos.
-Too many topics.
-No clear idea of what to focus on first.
-
-This summary sheet works because it shows the parts of Python you actually use when writing code.
-
-A quick breakdown in plain terms:
 
 **Basics and variables**
 
@@ -323,13 +259,6 @@ Not needed on day one.
 But seeing them early helps later.
 They’re just a way to group data and behavior together.
 
-Don’t try to memorize this sheet.
-
-Write small programs from it.
-Make mistakes.
-Fix them.
-
-That’s when Python starts to feel normal.
 
 ### 5.1 Python Fundamentals & Data Structures (Building a strong foundation in syntax, data types, and logic)
 
