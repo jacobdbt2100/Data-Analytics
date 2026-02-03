@@ -606,6 +606,72 @@ The `ROW_NUMBER() function` assigns a unique incremental number to each row in t
 
 ## 5. Python for Data Analysis
 
+# PYTHON SUMMARY
+
+A visual summary of Python features that show up most in everyday code
+When people start learning Python, they often feel stuck.
+
+Too many videos.
+Too many topics.
+No clear idea of what to focus on first.
+
+This summary sheet works because it shows the parts of Python you actually use when writing code.
+
+A quick breakdown in plain terms:
+
+→ Basics and variables
+You use these everywhere. Store values. Print results.
+If this feels shaky, everything else feels harder than it should.
+
+→ Data structures
+Lists, tuples, sets, dictionaries.
+Most real problems come down to choosing the right one.
+Pick the wrong structure and your code becomes messy fast.
+
+→ Conditionals
+This is how Python makes decisions.
+Questions like:
+– Is this value valid?
+– Does this row meet my rule?
+
+→ Loops
+Loops help you work with many things at once.
+Rows in a file. Items in a list.
+They save you from writing the same line again and again.
+
+→ Functions
+This is where good habits start.
+Functions help you reuse logic and keep code readable.
+Almost every real project relies on them.
+
+→ Strings
+Text shows up everywhere.
+Names, emails, file paths.
+Knowing how to handle text saves a lot of time.
+
+→ Built-ins and imports
+Python already gives you powerful tools.
+You don’t need to reinvent them.
+You just need to know they exist.
+
+→ File handling
+Real data lives in files.
+You read it, clean it, and write results back.
+This matters more than beginners usually realize.
+
+→ Classes
+Not needed on day one.
+But seeing them early helps later.
+They’re just a way to group data and behavior together.
+
+Don’t try to memorize this sheet.
+
+Write small programs from it.
+Make mistakes.
+Fix them.
+
+That’s when Python starts to feel normal.
+
 ### 5.1 Python Fundamentals & Data Structures (Building a strong foundation in syntax, data types, and logic)
 
 - Variables, input/output, and indentation
