@@ -31,27 +31,10 @@ Summarily, **data profiling** tells what the data looks like; **data validation*
   - **Foreign keys**: a field in a table that refers to the primary key of another table, establishing a relationship between the two tables.
   - 1–1, 1–Many, Many–Many
 
-### 1.2 Data Preparation (Cleaning & Transformation)
+### 1.2 Data Cleaning
 
-**Cleaning:**
-- Duplicates
-- Missing Values
-- Data Types
-- Data Formats
-- Invalid Data
-- Irrelevant Data
-- Special Characters
-- Outliers (statistical analysis)
-
-**Transformation:**
-- **Append:** combines data by adding rows. It stacks datasets with the same structure into one larger dataset, increasing the number of records without changing the columns.
-- **Merge:** combines data by adding columns. It links datasets using a common field to bring related information from one dataset into another.
-- Normalization vs Standardization (model building)
-
+**Data cleaning** is the process of identifying and correcting errors in a dataset to improve its reliability for analysis.
 **Data Cleaning Steps:**
-`Data cleaning` is the process of identifying and correcting errors in a dataset to improve its reliability for analysis.
-
-`Data quality checks:`
 
 **1. Data Types**
 - Text, Dates, Decimals/Floats, Integer, Boolean)
@@ -85,80 +68,29 @@ Summarily, **data profiling** tells what the data looks like; **data validation*
 Outliers are values that differ significantly from the mean of
 characteristic features of a dataset.
 
-> Outlier Detection Methods:
-- **Box Plot (IQR) Method**: A value is an outlier if it exceeds or falls below **1.5×IQR (interquartile range)**. That is, if it lies above the top quartile (Q3) or below the bottom quartile (Q1).
-- **Standard Deviation Method**: A value is an outlier if it is greater or lower than the **mean±(3×standard deviation)**.
+**Outlier Detection Methods:**
+- Box Plot (IQR) Method: A value is an outlier if it exceeds or falls below **1.5×IQR (interquartile range)**. That is, if it lies above the top quartile (Q3) or below the bottom quartile (Q1).
+- Standard Deviation Method: A value is an outlier if it is greater or lower than the **mean±(3×standard deviation)**.
 
-> A **box plot** is a graphical representation of the distribution of a dataset showing the median, quartiles, and possible outliers.
+A **box plot** is a graphical representation of the distribution of a dataset showing the median, quartiles, and possible outliers.
 
 ### 1.3 Exploratory Data Analysis (EDA)
-- Descriptive statistics (mean, median, mode, std, percentiles)
-- Distributions & variability
-- Correlations
-- Segmentation
-  - `Demographic` (age, gender, income level, education, occupation, marital status)
-  - `Geographic` (country, state, city, climate zones, urban vs rural, population density)
-  - `Psychographic` (values & beliefs, interests/attitudes)
-  - `Behavioural` (recency, frequency, monetary-RFM)
-
-An unsupervised machine learning technique, `K-Means Clustering`, groups customers based on similarity in behaviour (advanced RFM analysis)
-- Market basket analysis
-- Cohort analysis
-
 ### 1.4 Business Understanding & Metrics
-- KPIs
-- Essential business metrics (marketing):
-  - Engagement rate: measure/compare success of creating awareness about a product or service
-  - Conversion rate: measure/compare sucess of users' completion of the desired business action (purchase, subscription)
-  - Return on Ad Spend (ROAS)
-  - Retention rate
- 
+
 ### 1.5 Data Modelling Concepts
 
-**Semantic model:** A layer that defines metrics, relationships, and logic (calculations) for easy analysis and reporting.
-
-- `Schema:`a structured plan of how data is organized in a database. It defines:
-  - `Tables (entities):` `Fact` vs `Dimension` tables
-  - `Columns (attributes)`
-  - `Data types:` integer, string, date, etc.
-  - `Relationships:` between tables (primary keys, foreign keys)
-  - `Constraints:` rules like NOT NULL, UNIQUE, etc.
-
-- `Granularity:` level of detail stored in a dataset or table. `Higher granularity` means more detailed data (e.g., individual transactions). `Lower granularity` means summarized or aggregated data (e.g., monthly sales totals). Choosing the right granularity affects storage cost, query performance, and analytical usefulness.
-  > `Example:`
-    - Suppose you have a `Sales table`
-      - `High granularity:` One row per item sold (e.g., “1 bottle of Coke sold at 10:05 AM”).
-      - `Low granularity:` One row per day summarizing all items sold (e.g., “500 items sold on Monday”).
-    - Choosing granularity depends on the analysis:
-        - Analyse peak shopping hours > `High granularity`
-        - Show monthly performance > `Low granularity`
-  
-- `Slowly Changing Dimensions (SCD):` describes attributes in a dimension table that change over time, but not frequently. `SCD techniques` ensure historical data remains accurate when those attributes change. There are different types (e.g., `Type 1:` overwrite old data; `Type 2:` add a new record to preserve history). SCDs are key to maintaining correct historical reporting and trend analysis.
-  > `Example:`
-        - A customer changes their `address` or `marital status`
-        - Change in `cost` or `sales price`
-- `Benefits of data modelling:`
-  - `Data Quality:` ensures clean, structured, and consistent data
-  - `Performance:` improves query speed
-  - `Accuracy:` reduces duplication and errors
-  - `Reusability:` reuse of data structures, definitions, and logic across multiple reports and systems
-
-### 1.6 Data Visualisation & Insight Communication
-- Chart selection best practices
-- Storytelling with data
-- Dashboards & Reports
-
-### 1.7 Documentation
-- Meta data
-- Code, Queries (with comments)
-- Version control basics (git)
-- Communicating assumptions, limitations, and data decisions
+- **Semantic model:** a layer that defines metrics, relationships, and logic (calculations) for easy analysis and reporting.
+- **Schema:** a structured plan of how data is organized in a database. It defines tables, columns, data types, relationships, constraints (not null, unique)
+- **Granularity:** level of detail stored in a table. `Higher granularity` (e.g., individual transactions), `Lower granularity` (e.g., monthly sales totals).
+- **Slowly Changing Dimensions (SCD):** describes attributes in a dimension table that change over time, but not frequently.
+ 
+**Benefits of data modelling:**
+- Data Quality: ensures clean, structured, and consistent data
+- Performance: improves query speed
+- Accuracy: reduces duplication and errors
+- Reusability: reuse of data structures, definitions, and logic across multiple reports and systems.
 
 ### 1.8 Data Privacy and Security Concerns
-- Data protection regulations
-- Anonymizing sensitive data
-- Secure data storage and transfer methods
-- Access controls
 
 ## 2. Excel for Data Analysis
 
