@@ -28,48 +28,29 @@ Summarily, **data profiling** tells what the data looks like; **data validation*
 
 **Data Cleaning Steps:**
 
-**1. Data Types**
-- Text, Dates, Decimals/Floats, Integer, Boolean)
+**1. Data Types:** `Text`, `Dates`, `Decimals/Floats`, `Integer`
 
-**2. Irrelevant Data**
-- Unused fields or entries
-- Constant/no-change values
+**2. Irrelevant Data:** `Unused fields/entries`, `Constant values`
 
-**3. Missing Values**
-- NULLs / NaNs / Blanks
+**3. Missing Values:** `NULLs / NaNs / Blanks`
 
-**4. Duplicates**
-- Repeated entries (none unique rows)
+**4. Duplicates:** `Repeated entries` (none unique rows)
 
-**5. Special / Non-printable Characters**
-- Unwanted characters/symbols (punctuation, emojis, currency)
-- Extra spaces (tabs, newline artefacts)
+**5. Special / Non-printable Characters:** `Unwanted characters/symbols` (punctuation, emojis, currency), `Extra spaces` (tabs, newline artefacts)
 
-**6. Data Formats**
-- Inconsistent date formats (DD/MM vs MM/DD)
-- Mixed units (kg vs g, ₦ vs $)
-- Spacing inconsistencies ("Transfer", "Transfer ")
-- Case inconsistencies (“Male”, “male”, "MALE", “M”)
+**6. Data Formats (Structural errors):** `Inconsistent date formats` (DD/MM vs MM/DD), `Mixed units` (kg vs g, ₦ vs $), `Spacing inconsistencies` ("Transfer", "Transfer "), `Case inconsistencies` (“Male”, “male”, "MALE", “M”)
 
-**7. Invalid Data**
-- Out-of-range values (negative age, future dates, time <= 0)
-- Logical conflicts (discharge < admission)
-- Failed reference integrity checks (invalid IDs/keys)
+**7. Invalid Data:** `Out-of-range values` (negative age, future dates, time <= 0), `Logical conflicts` (discharge date < admission date), `Failed reference integrity checks` (invalid IDs/keys)
 
-**8. Outliers**
-Outliers are values that differ significantly from the mean of
-characteristic features of a dataset.
+**8. Outliers:** Outliers are values that differ significantly from the mean of characteristic features of a dataset.
 
 **Outlier Detection Methods:**
-- Box Plot (IQR) Method: A value is an outlier if it exceeds or falls below **1.5×IQR (interquartile range)**. That is, if it lies above the top quartile (Q3) or below the bottom quartile (Q1).
-- Standard Deviation Method: A value is an outlier if it is greater or lower than the **mean±(3×standard deviation)**.
+- **Box Plot (IQR) Method:** A value is an outlier if it exceeds or falls below `1.5×IQR (interquartile range)`. That is, if it lies above the top quartile (Q3) or below the bottom quartile (Q1).
+- **Standard Deviation Method:** A value is an outlier if it is greater or lower than the `mean±(3×standard deviation)`
 
 A **box plot** is a graphical representation of the distribution of a dataset showing the median, quartiles, and possible outliers.
 
-### 1.3 Exploratory Data Analysis (EDA)
-### 1.4 Business Understanding & Metrics
-
-### 1.5 Data Modelling Concepts
+### 1.2 Data Modelling Concepts
 
 - **Semantic model:** a layer that defines metrics, relationships, and logic (calculations) for easy analysis and reporting.
 - **Schema:** a structured plan of how data is organized in a database. It defines tables, columns, data types, relationships, constraints (not null, unique)
@@ -82,54 +63,26 @@ A **box plot** is a graphical representation of the distribution of a dataset sh
 - Accuracy: reduces duplication and errors
 - Reusability: reuse of data structures, definitions, and logic across multiple reports and systems.
 
-### 1.8 Data Privacy and Security Concerns
-
 ## 2. Excel for Data Analysis
 
-### 2.1 Excel Basics, Data Cleaning & Transformation
-
-- Importing data (CSV, TXT, Excel files) 
-- Data types, duplicates, missing values, invalid data, etc.
-- **Text functions:** TRIM, CLEAN, LEFT, RIGHT, MID, FIND, LEN, TEXTSPLIT
-- **Error handling:** IFERROR, ISBLANK, IFNA
-- Combining text columns using CONCATENATE
-- Data Validation (drop-down lists)
-- Flash Fill for quick transformations
-- Introduction to **`Power Query`** for automated data cleaning & transformation
-
-### 2.2 Functions & Conditional Formatting
+### 2.1 Functions & Conditional Formatting
 
 - **Math & Stats:** SUM, AVERAGE, MEDIAN, MODE, COUNT, MAX, MIN, STDEV, VAR
 - **Logical:** IF, IFS, AND, OR
 - **Conditional:** SUMIF, SUMIFS, AVERAGEIF, AVERAGEIFS, COUNTIFS
 - **Lookup & Reference:** VLOOKUP, XLOOKUP, INDEX-MATCH
+- **Text functions:** TRIM, CLEAN, LEFT, RIGHT, MID, FIND, LEN, TEXTSPLIT
+- **Error handling:** IFERROR, ISBLANK, IFNA
 - **Dynamic Array Functions:** FILTER, SORT, UNIQUE, SEQUENCE
 - **Conditional Formatting:** Highlight trends and outliers
 
-### 2.3 Data Exploration
+### 2.2 Data Exploration
 
-- **Pivot Tables & Charts**: a data summarization tool to aggregate and filter data in a spreadsheet. Key features:
-  - `Grouping data`
-  - `Filtering & Slicing`
-  - `Sorting`
-  - `Calculated fields:` for quick calculations—ratios, percentages, averages, sums, differences; directly within the pivot table.
-  - `Visualization`
+- **Pivot Tables & Charts**: a data summarization tool to aggregate and filter data in a spreadsheet. Key features: `Grouping data`, `Filtering & Slicing`, `Sorting`, `Calculated fields:` for quick calculations; ratios, percentages, averages, sums, differences, etc., directly within the pivot table, `Visualization`.
+- **Power Query** for automated data cleaning & transformation
+- **Power Pivot:** to create relationships between multiple tables for advanced analysis. Sheet formulas become inefficient with large datasets.
+- **DAX:** enables more omplex, dynamic calculations across related tables than **`Calculated fields`** can handle.
 - **Descriptive Statistics** (with formulas & Data Analysis ToolPak)
-- **Power Query:** combining multiple tables (merge & append)
-- **Power Pivot:** to create relationships between multiple tables for advanced analysis. **`VLOOKUP`** or **`XLOOKUP`** become inefficient with large datasets.
-- **DAX (Data Analysis Expressions):** enables more omplex, dynamic calculations across related tables than **`Calculated fields`** can handle.
-
-### 2.4 Visualization & Dashboard Building
-
-- Chart types and use cases:
-  - Column, Bar, Line, Pie, Scatter, Histogram, Combo
-- Dynamic charts with Excel Tables or named ranges
-- Slicers and Timelines for interactive reports
-- Dashboard design principles:
-  - Layout consistency
-  - Minimal colour palette
-  - Clear KPI presentation
-- Final **interactive dashboard** project
 
 ## 3. SQL
 
