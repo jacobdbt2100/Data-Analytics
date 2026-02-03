@@ -1,9 +1,10 @@
 # Data Analytics
 
-## 1. Introduction
+## 1. Foundation
 
-- **Data analysis** is a process of `modelling`, `analyzing`, and `interpreting` data to extract insights. A **Data Analyst** `collects`, `process`, and `analyze` data to identify trends/patterns and make informed decisions.
-- **Data lifecycle**: `Use case` > `Data collection` > `Storage` > `Processing` > `Analysis` > `Visualization` > `Reporting`
+**Data analysis** is a process of `modelling`, `analyzing`, and `interpreting` data to extract insights. A **Data Analyst** `collects`, `process`, and `analyze` data to identify trends/patterns and make informed decisions.
+
+**Data lifecycle**: `Use case` > `Data collection` > `Storage` > `Processing` > `Analysis` > `Visualization` > `Reporting`
 
 **Types of analytics**:
 - **Descriptive:** `What happened?` e.g., A skincare brand sees 15,000 people clicked their Instagram ad last week, but only 500 purchased.
@@ -14,30 +15,22 @@
 
 ### 1.1 Data Cleaning
 
-- **Data cleaning** is the process of identifying and correcting errors in a dataset to improve its reliability for analysis.
+**Data cleaning** is the process of identifying and correcting errors in a dataset to improve its reliability for analysis.
 
 **Data Cleaning Steps:**
 
-- **1. Data Types:** `Text`, `Dates`, `Decimals/Floats`, `Integer`
-- **2. Irrelevant Data:** `Unused fields/entries`, `Constant values`
-
-**3. Missing Values:** `NULLs / NaNs / Blanks`
-
-**4. Duplicates:** `Repeated entries` (none unique rows)
-
-**5. Special / Non-printable Characters:** `Unwanted characters/symbols` (punctuation, emojis, currency), `Extra spaces` (tabs, newline artefacts)
-
-**6. Data Formats (Structural errors):** `Inconsistent date formats` (DD/MM vs MM/DD), `Mixed units` (kg vs g, ₦ vs $), `Spacing inconsistencies` ("Transfer", "Transfer "), `Case inconsistencies` (“Male”, “male”, "MALE", “M”)
-
-**7. Invalid Data:** `Out-of-range values` (negative age, future dates, time <= 0), `Logical conflicts` (discharge date < admission date), `Failed reference integrity checks` (invalid IDs/keys)
-
-**8. Outliers:** Outliers are values that differ significantly from the mean of characteristic features of a dataset.
+- **Data Types:** `Text`, `Dates`, `Decimals/Floats`, `Integer`
+- **Irrelevant Data:** `Unused fields/entries`, `Constant values`
+- **Missing Values:** `NULLs / NaNs / Blanks`
+- **Duplicates:** `Repeated entries` (none unique rows)
+- **Special Characters:** `Unwanted characters/symbols` (punctuation, emojis, currency), `Extra spaces` (tabs, newline artefacts)
+- **Data Formats:** `Inconsistent date formats` (DD/MM vs MM/DD), `Mixed units` (kg vs g, ₦ vs $), `Case inconsistencies` (“Male”, “male”, "MALE", “M”)
+- **Invalid Data:** `Out-of-range values` (negative age, future dates, time <= 0), `Logical conflicts` (discharge date < admission date), `Failed reference integrity checks` (invalid IDs/keys)
+- **Outliers:** Outliers are values that differ significantly from the mean of characteristic features of a dataset.
 
 **Outlier Detection Methods:**
-- **Box Plot (IQR) Method:** A value is an outlier if it exceeds or falls below `1.5×IQR (interquartile range)`. That is, if it lies above the top quartile (Q3) or below the bottom quartile (Q1).
+- **Box Plot (IQR) Method:** A value is an outlier if it exceeds or falls below `1.5×IQR (interquartile range)`. That is, if it lies above the top quartile (Q3) or below the bottom quartile (Q1). A **box plot** is a graphical representation of the distribution of a dataset showing the median, quartiles, and possible outliers.
 - **Standard Deviation Method:** A value is an outlier if it is greater or lower than the `mean±(3×standard deviation)`
-
-A **box plot** is a graphical representation of the distribution of a dataset showing the median, quartiles, and possible outliers.
 
 ### 1.2 Data Modelling Concepts
 
@@ -81,7 +74,7 @@ A **box plot** is a graphical representation of the distribution of a dataset sh
 
 ## 3. SQL
 
-### 3.1 SQL Basics & Database Foundations
+### 3.1 SQL Basics & Database Foundation
 
 **SQL (Structured Query Language)** is a standard programming language used to communicate with **relational databases**.
 
@@ -90,8 +83,6 @@ A **`database`** is an organized collection of data stored and accessed electron
 **SQL Clauses**
 - **Query Logical Written Order:** SELECT, TOP, DISTINCT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT
 - **Query Logical Execution Order:** FROM, ON, JOIN, WHERE, GROUP BY, HAVING, SELECT, DISTINCT, ORDER BY, TOP/LIMIT/OFFSET/FETCH
-
-Filter with **logical operators **(AND, OR, NOT, BETWEEN, IN, LIKE)
 
 ### 3.2 SQL Functions
 
@@ -102,11 +93,7 @@ Filter with **logical operators **(AND, OR, NOT, BETWEEN, IN, LIKE)
 - Set Operations: UNION, UNION ALL, INTERSECT; combine or compare results from multiple queries
 - Window Functions: ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG, SUM OVER, AVG OVER; perform calculations across rows without grouping
 
-### 3.3 Data Cleaning, Joins & CTEs
-
-- Data cleaning with TRIM, LOWER, UPPER, REPLACE
-- Handling NULLs with COALESCE, IS NULL, IS NOT NULL
-- JOINS in SQL
+### 3.3 Joins, Subqueries, and CTEs
 
 **Join** is an operation used to combine rows from two or more tables based on related columns. Types: `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL JOIN`, `CROSS JOIN`, `SELF JOIN`.
 
@@ -151,29 +138,19 @@ SQL commands are statements used to define database structures, retrieve data, m
 **DQL (Data Query Language):** query and retrieve data.
 - SELECT: retrieves data from tables
 
-### 3.6 Terms in SQL Databases
+### 3.6 SQL Databases Terms
 
-**DELETE** removes specific rows from a table using a condition. **TRUNCATE** removes all rows from a table.
-
-**UNION and UNION ALL** are used to combine the result sets of two or more SELECT statements. **UNION** removes duplicate rows from the combined result set. **UNION ALL** includes all rows, including duplicates.
-
-**Transaction** is a sequence of SQL statements that are executed as a single logical unit of work. It ensures data consistency and integrity by either committing all changes or rolling them back if an error occurs.
-
-**ACID in database transactions:** Atomicity, Consistency, Isolation, and Durability. It is a set of properties that guarantee reliable processing of database transactions.
-
-**Stored Procedure** is a saved set of SQL commands that perform a specific task like retrieving, inserting, updating, or deleting data, and can be executed repeatedly. Can be with or without **parameters**.
-
-**View** is a virtual table based on the result of an SQL statement. A **materialized view** is a physical copy of the view's result set stored in the database, which is updated periodically.
-
-**Data Warehouse** is a large, centralized repository that stores and manages data from various sources designed for efficient analysis and reporting.
-
-**Candidate key** is a set of one or more columns that could potentially become the primary key.
-
-**Primary key** is a chosen candidate key that uniquely identifies a row in a table.
-
-**COALESCE** returns the first non-null expression from a list of expressions. It is often used to handle null values effectively.
-
-**ROW_NUMBER()** assigns a unique incremental number to each row in the result set.
+- **DELETE** removes specific rows from a table using a condition. **TRUNCATE** removes all rows from a table.
+- **UNION and UNION ALL** are used to combine the result sets of two or more SELECT statements. **UNION** removes duplicate rows from the combined result set. **UNION ALL** includes all rows, including duplicates.
+- **Transaction** is a sequence of SQL statements that are executed as a single logical unit of work. It ensures data consistency and integrity by either committing all changes or rolling them back if an error occurs.
+- **ACID in database transactions:** Atomicity, Consistency, Isolation, and Durability. It is a set of properties that guarantee reliable processing of database transactions.
+- **Stored Procedure** is a saved set of SQL commands that perform a specific task like retrieving, inserting, updating, or deleting data, and can be executed repeatedly. Can be with or without **parameters**.
+- **View** is a virtual table based on the result of an SQL statement. A **materialized view** is a physical copy of the view's result set stored in the database, which is updated periodically.
+- **Data Warehouse** is a large, centralized repository that stores and manages data from various sources designed for efficient analysis and reporting.
+- **Candidate key** is a set of one or more columns that could potentially become the primary key.
+- **Primary key** is a chosen candidate key that uniquely identifies a row in a table.
+- **COALESCE** returns the first non-null expression from a list of expressions. It is often used to handle null values effectively.
+- **ROW_NUMBER()** assigns a unique incremental number to each row in the result set.
 
 ## 4. Power BI
 
