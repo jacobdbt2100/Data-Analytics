@@ -48,8 +48,6 @@ Summarily, **data profiling** tells what the data looks like; **data validation*
 - **Merge:** combines data by adding columns. It links datasets using a common field to bring related information from one dataset into another.
 - Normalization vs Standardization (model building)
 
-
-
 **Data Cleaning Steps:**
 `Data cleaning` is the process of identifying and correcting errors in a dataset to improve its reliability for analysis.
 
