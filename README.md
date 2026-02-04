@@ -215,7 +215,7 @@ SQL commands are statements used to define database structures, retrieve data, m
 
 ### 5.5 Python Programming Terms
 
-## 6. Statistics Data Analysis
+## 6. Statistics for Data Analysis
 
 ### 6.1	Descriptive Statistics
 - Mean, median, mode
