@@ -35,10 +35,15 @@
 
 ### 1.3 Data Modelling Concepts
 
+- Star schema vs snowflake schema
+- Snapshot
+
+
 - **Semantic model:** a layer that defines metrics, relationships, and logic (calculations) for easy analysis and reporting.
 - **Schema:** a structured plan of how data is organized in a database. It defines tables, columns, data types, relationships, constraints (not null, unique)
 - **Granularity:** level of detail stored in a table. `Higher granularity` (e.g., individual transactions), `Lower granularity` (e.g., monthly sales totals).
-- **Slowly Changing Dimensions (SCD):** describes attributes in a dimension table that change over time, but not frequently.
+- **Slowly Changing Dimensions (SCD):** describes attributes in a dimension table that change over time (usually not frequently), and how to store those changes.
+- **Snapshot:** is a table that stores the state of something at a point in time, so changes can be tracked over time.
  
 **Benefits of data modelling:**
 - Data Quality: ensures clean, structured, and consistent data
