@@ -70,7 +70,7 @@
 - **Pivot Tables & Charts**: a data summarization tool to aggregate and filter data in a spreadsheet. Key features: `Grouping data`, `Filtering & Slicing`, `Sorting`, `Calculated fields:` for quick calculations; ratios, percentages, averages, sums, differences, etc., directly within the pivot table, `Visualization`.
 - **Power Query** for automated data cleaning & transformation
 - **Power Pivot:** to create relationships between multiple tables for advanced analysis. Sheet formulas become inefficient with large datasets.
-- **DAX:** enables more omplex, dynamic calculations across related tables than **`Calculated fields`** can handle.
+- **DAX:** enables more omplex, dynamic calculations across related tables than **Calculated fields** can handle.
 - **Descriptive Statistics:** with formulas & Data Analysis ToolPak.
 
 ## 3. SQL
@@ -79,7 +79,7 @@
 
 **SQL (Structured Query Language)** is a standard programming language used to communicate with **relational databases**.
 
-A **`database`** is an organized collection of data stored and accessed electronically.
+A **database** is an organized collection of data stored and accessed electronically.
 
 **SQL Clauses**
 - **Query Logical Written Order:** SELECT, TOP, DISTINCT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT
