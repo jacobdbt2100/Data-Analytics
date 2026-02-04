@@ -265,51 +265,41 @@ They’re just a way to group data and behavior together.
 - Model evaluation (R², MAE, RMSE)
 - Saving and loading models with `joblib`
 
-### MISCELLANEOUS
+### 5.x Python Programming Terms
 
-
-
-#### `Modules:`
-In Python, modules are files that contain Python code — such as functions, classes, and variables — that can be reused in other programs.
-
-#### `Matplotlib vs Seaborn:`
+- **Modules:** files that contain Python code - such as functions, classes, and variables - that can be reused in other programs.
 
 
 
 
-#### `Pandas Summary Codes:`
 
 
 
-## 6. Statistics Basics for Data Analysis
+
+
+
+
+## 6. Statistics Data Analysis
 
 ### 6.1	Descriptive Statistics
-    - Mean, median, mode
-    - Variance and standard deviation
-    - Percentiles and quartiles
-    - Data visualization
+- Mean, median, mode
+- Variance and standard deviation
+- Percentiles and quartiles
 
 ### 6.2	Inferential Statistics
-    - Confidence intervals
-    - Hypothesis testing (A/B testing, t-tests, chi-square tests, z-tests, etc.)
-    - Correlation and covariance
+- Hypothesis testing (A/B testing, t-tests, chi-square tests, z-tests, etc.)
+- Confidence intervals
+- Correlation and covariance
 
-### 6.3	Linear Regression
-
-### 6.4	Classification
-
-### 6.5	Probability Basics
+### 6.3	Probability Basics
     - Basic probability rules
     - Distributions (normal, uniform, binomial)
     - Sampling techniques
 
-**Histogram**: a graphical representation of the distribution of a dataset showing the frequency of data points in specified intervals.
+### 6.4 Statistical Terms
 
-**Box plot**: a graphical representation of the distribution of a dataset showing the median, quartiles, and possible outliers.
-
-**Linear Regression**: a statistical method used to model the relationship between a dependent variable and one or more independent varaibles.
-
-**R-squared**: measures the proportion of variation in the dependent variable explained by the independent variables.
-
-**Adjusted R-squared**: adjusts for the number of independent varaibles in the model.
-
+- **Histogram**: a graphical representation of the distribution of a dataset showing the frequency of data points in specified intervals.
+- **Box plot**: a graphical representation of the distribution of a dataset showing the median, quartiles, and possible outliers.
+- **Linear Regression**: a statistical method used to model the relationship between a dependent variable and one or more independent varaibles.
+- **R-squared**: measures the proportion of variation in the dependent variable explained by the independent variables.
+- **Adjusted R-squared**: adjusts for the number of independent varaibles in the model.
