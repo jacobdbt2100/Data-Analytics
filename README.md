@@ -33,29 +33,56 @@
 - **Box Plot (IQR) Method:** A value is an outlier if it exceeds or falls below `1.5×IQR (interquartile range)`. That is, if it lies above the top quartile (Q3) or below the bottom quartile (Q1). A **box plot** is a graphical representation of the distribution of a dataset showing the median, quartiles, and possible outliers.
 - **Standard Deviation Method:** A value is an outlier if it is greater or lower than the `mean±(3×standard deviation)`
 
-### 1.3 Data Modelling Concepts
+### 1.3 Database Design
 
-- Star schema vs snowflake schema
-- Snapshot
+- Normalization (1NF, 2NF, 3NF): the process of structuring data to reduce redundancy and improve integrity—typically by organizing it into related tables and enforcing rules (normal forms) so that each data point is stored once and updated consistently.
+- Primary and foreign keys
 
+### 1.4 Data Warehousing Concepts
 
+**Data Warehouse:** a large centralised repository of data optimised for analysis and reporting.
+
+- OLTP vs OLAP
+- Data warehouses vs data lakes vs lakehouses
+- Layering: staging, core, analytics marts
+- Partitioning and clustering for performance
+- Handling incremental loads
+
+### 1.5 Data Modelling Concepts
+
+- Fact tables vs. dimension tables
+- Star schema vs. snowflake schema
 - **Semantic model:** a layer that defines metrics, relationships, and logic (calculations) for easy analysis and reporting.
 - **Schema:** a structured plan of how data is organized in a database. It defines tables, columns, data types, relationships, constraints (not null, unique)
-- **Granularity:** level of detail stored in a table. `Higher granularity` (e.g., individual transactions), `Lower granularity` (e.g., monthly sales totals).
-- **Slowly Changing Dimensions (SCD):** describes attributes in a dimension table that change over time (usually not frequently), and how to store those changes.
+- **Granularity (Grain):** level of detail stored in a table. `Higher granularity` (e.g., individual transactions), `Lower granularity` (e.g., monthly sales totals).
+- **Slowly Changing Dimensions ((SCD type 1, 2, 3):** describes attributes in a dimension table that change over time (usually not frequently), and how to store those changes.
 - **Snapshot:** is a table that stores the state of something at a point in time, so changes can be tracked over time.
- 
+- **Cardinality:** describes how many rows in one table relate to rows in another table; `1-to-1`, `1-to-many`, `many-to-many`
+
 **Benefits of data modelling:**
 - Data Quality: ensures clean, structured, and consistent data
 - Performance: improves query speed
 - Accuracy: reduces duplication and errors
 - Reusability: reuse of data structures, logic, and definitions across multiple reports and systems.
 
-### 1.4 Data Terms
+### 1.6 Data Pipeline, ETL/ELT Design Principles
 
-- **Data mining:** The process of applying statistical and machine-learning techniques on data to uncover patterns.
-- **Data profiling:** The process of examining data to assess fitness for use; **tells what the data looks like.**
-- **Data validation:** The process of enforcing predefined rules and constraints to ensure data meets required standards; **ensures the data meets requirement.**
+- Idempotency: pipelines can run multiple times safely
+- Data validation and error handling
+- Modularity and reusability
+
+### 1.7 Data Terms
+
+- **Data mining:** applying statistical and machine-learning techniques on data to uncover patterns.
+- **Data profiling:** examining data to assess fitness for use; **tells what the data looks like.**
+- **Data validation:** enforcing predefined rules and constraints to ensure data meets required standards; **ensures the data meets requirement.**
+- **Ephemeral models:** temporary transformations that exist only during query execution.They are used to break complex logic into reusable steps without creating permanent tables. This keeps the warehouse clean and saves storage space.
+
+### 1.8 Sample Design & Modelling Questions
+- Explain a star schema and when it’s preferred over a snowflake schema.
+- How would you handle a slowly changing dimension for customer addresses?
+- If a table has too many columns, what design changes would you make?
+- How would you structure your data warehouse for incremental loads?
 
 ## 2. Excel for Data Analysis
 
@@ -158,7 +185,7 @@ SQL commands are statements used to define database structures, retrieve data, m
 - **COALESCE** returns the first non-null expression from a list of expressions. It is often used to handle null values effectively.
 - **ROW_NUMBER()** assigns a unique incremental number to each row in the result set.
 
-### 3.7 Sample Questions
+### 3.7 Sample SQL Questions
 - Write a query to calculate the rolling 7-day sales per product.
 - Find top 3 customers by revenue in each region.
 - Identify duplicate rows and suggest a way to remove them.
