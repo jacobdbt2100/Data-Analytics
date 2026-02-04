@@ -102,7 +102,7 @@ A **database** is an organized collection of data stored and accessed electronic
 
 ### 3.4 Query Optimization
 
-**Query performance techniques (basics)**
+**Query optimization techniques (basics)**
 - LIMIT
 - Indexes
 - Avoiding `SELECT *`
