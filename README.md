@@ -241,3 +241,72 @@ SQL commands are statements used to define database structures, retrieve data, m
 - **Adjusted R-squared**: adjusts for the number of independent varaibles in the model.
 
 ## 7. Machine Learning Introduction
+
+## 8. Interview Prep
+
+### 8.1 Common Recruiter Questions
+
+**Background and fit:**
+- Walk me through your CV and current role in 2 minutes.
+- What are your key strengths as a data professional?
+- Why are you looking to move now?
+- What does the ideal next role look like for you?
+
+**Role and company motivation:**
+- What interests you about this company and this role specifically?
+- Which of your recent projects best maps to what we need here?
+- How do you measure the impact of your work on the business?
+
+**Technical screening:**
+- What is your core stack day to day? (SQL, Python, dbt, Spark, Airflow, Power BI/Tableau, cloud)
+- Rate your proficiency in SQL and Python and give examples of recent use.
+- How have you modelled data for analytics? Star vs snowflake, facts and dimensions.
+- Talk me through an end-to-end pipeline you’ve built or improved.
+- How do you ensure data quality and reliability?
+
+**Testing, observability, monitoring:**
+- Experience with cloud platforms? (AWS Azure GCPWhat services did you use and why?
+- Have you worked with stakeholders to define metrics or a semantic layer?
+- Any exposure to machine learning or experimentation?
+- What was your role and outcomes?
+- How do you handle performance optimisation in SQL or Spark?
+- Experience with data governance, privacy and GDPR in practice.
+
+**Behavioural and delivery:**
+- Tell me about a time you managed conflicting stakeholder priorities.
+- Describe a tough data problem you solved under time pressure.
+- A project that didn’t go to plan and what you learned.
+- How do you plan work, estimate, and communicate risks?
+- Example of influencing non-technical stakeholders to drive a decision.
+
+**Product and business impact:**
+- Which KPIs have you owned or improved?
+- By how much and over what timeframe?
+- How do you choose the right metric and avoid vanity metrics?
+- Example where your analysis changed a roadmap or saved costs.
+
+**Ways of working:**
+- Preferred working style and team setup.
+- Individual contributor vs mentoring.
+- Experience in Agile.
+- Ceremonies you participate in and how you handle sprint goals.
+- Collaboration with engineering and product.
+- Handover and documentation habits.
+
+**Practicalities and eligibility:**
+- Right to work in the UK and any need for visa sponsorship.
+- Security clearance status or eligibility if applicable.
+- Willingness to commute, preference for hybrid work, and tolerance for travel.
+- Notice period and earliest start date.
+- Salary expectations in £ base plus bonus and benefits.
+- Openness to bands.
+- Contracting vs permanent preference.
+
+**Track record and references:**
+- Which achievements are you most proud of and why?
+- Who could speak to your recent performance and in what context?
+
+**Closing checks:**
+- Where else are you interviewing and how far along are you?
+- What would make you accept an offer and what would be a red flag?
+- Do you have any upcoming time off we should be aware of?
