@@ -44,7 +44,7 @@
 - Data Quality: ensures clean, structured, and consistent data
 - Performance: improves query speed
 - Accuracy: reduces duplication and errors
-- Reusability: reuse of data structures, definitions, and logic across multiple reports and systems.
+- Reusability: reuse of data structures, logic, and definitions across multiple reports and systems.
 
 ### 1.4 Data Terms
 
